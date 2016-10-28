@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
+  root 'static_pages#home'
 
   get 'static_pages/help'
 
@@ -7,5 +7,5 @@ Rails.application.routes.draw do
 
   resources :microposts
   resources :users
-  root 'users#index'
+  get 'users/index'
 end
